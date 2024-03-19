@@ -1,0 +1,73 @@
+main>div{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+main > div > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main > div > p{
+    font-size: 18px;
+}
+
+/* color the text of links black*/
+main > div > a {
+    color: black;
+    font-size: 18px;
+}
+
+/*Change the color of links on hover using mouse*/
+main > div > a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Change the color of links on focus useing tab button*/
+main > div > a:focus{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+main {
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+/* Large device (laptops /desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+
+    #container2 {
+      grid-area: area2;  
+    }
+    #container3 {
+        grid-area: area3; 
+    }
+
+
+    main {
+        grid-template-areas:
+        '. area3 .'
+        'area2 area3 .'
+        'area2 area3 .';
+    }
+
+
+
+}
